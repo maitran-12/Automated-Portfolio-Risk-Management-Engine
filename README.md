@@ -1,8 +1,9 @@
 # ⚙️ Automated Portfolio Risk Management Engine
 
-### Objective: A high-performance, automated pipeline designed to quantify market risk for global asset portfolios. This engine demonstrates advanced Python proficiency in data engineering, statistical modeling, and automated visualization.
+### Objective
+- A high-performance, automated pipeline designed to quantify market risk for global asset portfolios. This engine demonstrates advanced Python proficiency in data engineering, statistical modeling, and automated visualization.
 
-The system is built with a **"Framework First"** mindset, ensuring scalability and robustness across diverse asset classes.
+- The system is built with a **"Framework First"** mindset, ensuring scalability and robustness across diverse asset classes.
 
 ### 1. Robust Data Engineering
 - **Asset-Agnostic Ingestion:** Dynamically fetches and cleans historical data for any ticker (Equities, Forex, Crypto) via `yfinance` across global exchanges (e.g. NYSE, LSE, SGX).
@@ -49,6 +50,15 @@ To demonstrate the engine's capability, the following analysis was generated for
 
 
 ---
+## 🚀 How to run
+
+
+```bash
+# Clone the repository
+git clone https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engine.git
+
+# Install required dependencies
+pip install -r requirements.txt
 
 
 
