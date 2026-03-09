@@ -58,7 +58,8 @@ To demonstrate the engine's capability, the following analysis was generated for
 git clone https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engine.git
 
 # Install required dependencies
-pip install -r requirements.txt
+pip install -r requirements.txt```
 
 ```bash
-Developed by Ngoc Mai Tran, to turn raw market data into actionable investment insights.
+Developed by Ngoc Mai Tran, to turn raw market data into actionable investment insights.```
+
