@@ -53,7 +53,7 @@ To demonstrate the engine's capability, the following analysis was generated for
 ## 🚀 How to run
 
 
-```
+```bash
 # Clone the repository
 git clone https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engine.git
 
@@ -61,9 +61,10 @@ git clone https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engi
 pip install -r requirements.txt
 ```
 
-```
+```text
 Developed by Ngoc Mai Tran, to turn raw market data into actionable investment insights.
 ```
+
 
 
 
