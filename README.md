@@ -1,6 +1,6 @@
 # ⚙️ Automated Portfolio Risk Management Engine
 
-#Objective: A high-performance, automated pipeline designed to quantify market risk for global asset portfolios. This engine demonstrates advanced Python proficiency in data engineering, statistical modeling, and automated visualization.
+# Objective: A high-performance, automated pipeline designed to quantify market risk for global asset portfolios. This engine demonstrates advanced Python proficiency in data engineering, statistical modeling, and automated visualization.
 
 The system is built with a **"Framework First"** mindset, ensuring scalability and robustness across diverse asset classes.
 
@@ -33,13 +33,21 @@ To demonstrate the engine's capability, the following analysis was generated for
 * **Energy (UK):** BP (BP.L)
 * **Finance & Telco (Singapore):** United Overseas Bank (U11.SI), Singtel (Z74.SI)
 
-### 📈 Visual Result 1: Distribution & Tail Risk
+### Terminal Result: Risk metrics calculations
+
+![Risk metrics](images/Portfolio risk metrics.png)
+
+### 📈 Visual 1: Distribution & Tail Risk
 *The engine identifies the 5% worst-case daily losses and visualizes the 'Expected Shortfall' (CVaR).*
 
+![Tail Risk Chart](images/Figure_1.png)
 
-### 📊 Visual Result 2: Asset Correlation Matrix
+
+### 📊 Visual 2: Correlation Matrix
 *The engine reveals sector-specific correlations (e.g., how Singaporean banking relates to US Big Tech) to optimize diversification.*
+![Correlation Matrix](images/Figure_2.png)
 
 
 ---
+
 
