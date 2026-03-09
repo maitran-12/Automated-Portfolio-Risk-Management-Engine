@@ -3,7 +3,7 @@
 ### Objective
 - A high-performance, automated pipeline designed to quantify market risk for global asset portfolios. This engine demonstrates advanced Python proficiency in data engineering, statistical modeling, and automated visualization.
 
-- The system is built with a **"Framework First"** mindset, ensuring scalability and robustness across diverse asset classes.
+- The system is built with a **Framework First** mindset, ensuring scalability and robustness across diverse asset classes.
 
 ### 1. Robust Data Engineering
 - **Asset-Agnostic Ingestion:** Dynamically fetches and cleans historical data for any ticker (Equities, Forex, Crypto) via `yfinance` across global exchanges (e.g. NYSE, LSE, SGX).
@@ -22,7 +22,7 @@
 ### 3. Smart Visualization
 - **Dynamic Heatmaps:** A self-adjusting correlation matrix that automatically scales based on portfolio size, using `RdYlGn` encoding for instant concentration-risk assessment.
 
-- **Tail-Risk Diagnostics:** Automated distribution plotting with shaded "Risk Zones" to highlight extreme loss scenarios beyond the VaR threshold.
+- **Tail-Risk Diagnostics:** Automated distribution plotting with shaded risk zones to highlight extreme loss scenarios beyond the VaR threshold.
 
 ---
 
@@ -39,7 +39,7 @@ To demonstrate the engine's capability, the following analysis was generated for
 ![Risk metrics](https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engine/blob/e1cf78102ea67a5c89de26ee3f81f49db12701c6/Portfolio%20risk%20metrics.png)
 
 ### 📈 Visual 1: Distribution & Tail Risk
-*The engine identifies the 5% worst-case daily losses and visualizes the 'Expected Shortfall' (CVaR).*
+*The engine identifies the 5% worst-case daily losses and visualizes the Expected Shortfall(CVaR).*
 
 ![Tail Risk Chart](https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engine/blob/e1cf78102ea67a5c89de26ee3f81f49db12701c6/Figure_1.png)
 
@@ -64,6 +64,7 @@ pip install -r requirements.txt
 ```text
 Developed by Ngoc Mai Tran, to turn raw market data into actionable investment insights.
 ```
+
 
 
 
