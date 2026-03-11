@@ -10,7 +10,7 @@
 
 - **Crash Handling:** Implemented `hasattr` reflection logic to handle polymorphic data structures (Series vs DataFrame), ensuring zero-crash execution during automated runs.
 
-- **Matrix Alignment:** Features a specialized `reindexing` layer to enforce strict synchronization between Asset Returns and Weight Vectors—critical for multi-asset accuracy.
+- **Matrix Alignment:** Features a specialized `reindexing` layer to enforce strict synchronization between Asset Returns and Weight Vectors, which is critical for multi-asset accuracy.
 
 ### 2. Quantitative Analytics
 - **Vectorized Computation:** Utilizes NumPy for high-speed matrix dot-products, bypassing inefficient loops to calculate Portfolio Daily Returns.
@@ -64,6 +64,7 @@ pip install -r requirements.txt
 ```text
 Developed by Ngoc Mai Tran, to turn raw market data into actionable investment insights.
 ```
+
 
 
 
