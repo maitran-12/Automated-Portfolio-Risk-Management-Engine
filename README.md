@@ -3,7 +3,7 @@
 ### Objective
 - A high-performance, automated pipeline designed to quantify market risk for global asset portfolios. This engine demonstrates advanced Python proficiency in data engineering, statistical modeling, and automated visualization.
 
-- The system is built with a **Framework First** mindset, ensuring scalability and robustness across diverse asset classes.
+- The system ensures scalability and robustness across diverse asset classes.
 
 ### 1. Robust Data Engineering
 - **Asset-Agnostic Ingestion:** Dynamically fetches and cleans historical data for any ticker (Equities, Forex, Crypto) via `yfinance` across global exchanges (e.g. NYSE, LSE, SGX).
@@ -17,7 +17,7 @@
 
 - **Risk Modeling:** Automated calculation of **95% Value at Risk (VaR)** and **Conditional VaR (CVaR/Expected Shortfall)** using non-parametric historical simulation.
 
-- **Risk Decomposition:** Advanced attribution layer using the Marginal Contribution to Risk (MCTR) framework to decouple capital weight from volatility contribution.
+- **Risk Decomposition:** Advanced attribution layer using the **Marginal Contribution to Risk (MCTR)** framework to decouple capital weight from volatility contribution.
 
 ### 3. Smart Visualization
 - **Dynamic Heatmaps:** A self-adjusting correlation matrix that automatically scales based on portfolio size, using `RdYlGn` encoding for instant concentration-risk assessment.
