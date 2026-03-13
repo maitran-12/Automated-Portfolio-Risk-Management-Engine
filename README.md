@@ -37,21 +37,21 @@ To demonstrate the engine's capability, the following analysis was generated for
 
 ### Terminal Result: Risk metrics calculations
 
-![Risk metrics](https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engine/blob/e1cf78102ea67a5c89de26ee3f81f49db12701c6/Portfolio%20risk%20metrics.png)
+![Risk metrics](https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engine/blob/92be66984791dbcec5a948f4f389425bf7242e6b/Portfolio%20risk%20metrics.png)
 
 ### 📈 Visual 1: Distribution & Tail Risk
 *The engine identifies the 5% worst-case daily losses and visualizes the Expected Shortfall(CVaR).*
 
-![Tail Risk Chart](https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engine/blob/e1cf78102ea67a5c89de26ee3f81f49db12701c6/Figure_1.png)
+![Tail Risk Chart](https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engine/blob/92be66984791dbcec5a948f4f389425bf7242e6b/Figure_1.png)
 
 
 ### 📊 Visual 2: Correlation Matrix
 *The engine reveals sector-specific correlations (e.g., how Singaporean banking relates to US Big Tech) to optimize diversification.*
-![Correlation Matrix](https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engine/blob/e1cf78102ea67a5c89de26ee3f81f49db12701c6/Figure_2.png)
+![Correlation Matrix](https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engine/blob/92be66984791dbcec5a948f4f389425bf7242e6b/Figure_2.png)
 
 ### 📊 Visual 3: Risk Budgeting
 *The engine quantifies risk drivers to identify which assets actually drive portfolio volatility.*
-
+![Risk Budgeting](https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engine/blob/92be66984791dbcec5a948f4f389425bf7242e6b/Figure_3.png)
 
 
 ---
