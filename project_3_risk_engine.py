@@ -82,6 +82,34 @@ print(f"Conditional VaR (CVaR/Expected Shortfall): {cvar_95:.2%}")
 print(f"Annualized Portfolio Volatility: {annual_vol:.2%}")
 print("-" * 30)
 
+Module 4: Risk Budgeting/Contribution
+
+#Annual Covariance Matrix 
+vcv_matrix = returns.cov() * 252 
+
+# Marginal Contribution to Risk (MCTR) = (Covariance Matrix * Weights) / Portfolio Volatility
+mctr = (vcv_matrix.dot(weights)) / annual_vol
+
+#Absolute risk contribution
+arc = weights * mctr
+
+#Percentage risk contribution 
+prc = arc / annual_vol
+
+risk_contribution_df = pd.DataFrame({
+    'Ticker': valid_tickers,
+    'Weight': weights,
+    'Risk Contribution (%)': prc
+}).sort_values(by='Risk Contribution (%)', ascending=False)
+
+print("-" * 30)
+print("RISK CONTRIBUTION ANALYSIS")
+for index, row in risk_contribution_df.iterrows():
+    print(f"{row['Ticker']}: Weight {row['Weight']:.2%}, Contribution to Risk {row['Risk Contribution (%)']:.2%}")
+print("-" * 30)
+
+#Module 5: Visualisation
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -130,3 +158,35 @@ if len(valid_tickers) > 1:
     plt.show()
 else:
     print("\n💡 Tip: Add more tickers to see the Correlation Matrix and check diversification.")
+
+
+#figure 3: Risk contribution lolipop chart
+
+risk_plot_df = risk_contribution_df.sort_values(by='Risk Contribution (%)', ascending=True)
+
+plt.figure(figsize=(10, 10)) 
+plt.grid(False)
+sns.despine(left=True, bottom=True)
+
+plt.hlines(y=risk_plot_df['Ticker'], xmin=0, xmax=risk_plot_df['Risk Contribution (%)'], 
+           color='purple', alpha=0.5, linewidth=2)
+
+
+colors = ['red' if x > 0.1 else 'green' if x < 0 else 'gold' for x in risk_plot_df['Risk Contribution (%)']]
+plt.scatter(risk_plot_df['Risk Contribution (%)'], risk_plot_df['Ticker'], 
+            color=colors, s=100, alpha=1)
+
+
+plt.axvline(0, color='lightgrey', linestyle='-', linewidth=0.8) 
+plt.title("Risk Contribution Breakdown", fontsize=15, fontweight='bold')
+plt.xlabel("Contribution to Total Volatility (%)")
+plt.ylabel("Asset Ticker")
+
+
+for i, row in risk_plot_df.iterrows():
+    plt.annotate(f"{row['Risk Contribution (%)']:.3%}", 
+                 (row['Risk Contribution (%)'], row['Ticker']),
+                 textcoords="offset points", xytext=(10,-3), ha='left')
+
+plt.tight_layout()
+plt.show()
