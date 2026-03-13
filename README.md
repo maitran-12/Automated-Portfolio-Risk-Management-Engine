@@ -17,13 +17,14 @@
 
 - **Risk Modeling:** Automated calculation of **95% Value at Risk (VaR)** and **Conditional VaR (CVaR/Expected Shortfall)** using non-parametric historical simulation.
 
-- **Logarithmic Transformation:** Standardizes daily price changes into Log Returns to ensure time-additivity and statistical normality for long-term analysis.
+- **Risk Decomposition:** Advanced attribution layer using the Marginal Contribution to Risk (MCTR) framework to decouple capital weight from volatility contribution.
 
 ### 3. Smart Visualization
 - **Dynamic Heatmaps:** A self-adjusting correlation matrix that automatically scales based on portfolio size, using `RdYlGn` encoding for instant concentration-risk assessment.
 
 - **Tail-Risk Diagnostics:** Automated distribution plotting with shaded risk zones to highlight extreme loss scenarios beyond the VaR threshold.
 
+- **Lollipop Charts:** A visualization designed to identify risk drivers, handling both positive and negative risk contributions.
 ---
 
 ## 📊 Sample Output: Global Portfolio Analysis
@@ -47,6 +48,10 @@ To demonstrate the engine's capability, the following analysis was generated for
 ### 📊 Visual 2: Correlation Matrix
 *The engine reveals sector-specific correlations (e.g., how Singaporean banking relates to US Big Tech) to optimize diversification.*
 ![Correlation Matrix](https://github.com/maitran-12/Automated-Portfolio-Risk-Management-Engine/blob/e1cf78102ea67a5c89de26ee3f81f49db12701c6/Figure_2.png)
+
+### 📊 Visual 3: Risk Budgeting
+*The engine quantifies risk drivers to identify which assets actually drive portfolio volatility.*
+
 
 
 ---
